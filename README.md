@@ -4,7 +4,7 @@ https://www.techtarget.com/searchapparchitecture/feature/An-intro-to-the-5-SOLID
 https://blog.knoldus.com/why-we-need-solid-principles-and-its-types/
 -->
 
-  ![Descrição da imagem](solid_principles_of_object_oriented_design-f.png)
+  ![Descrição da imagem](images/solid_principles_of_object_oriented_design-f.png)
 
 
 
