@@ -11,82 +11,53 @@ https://mermaid.js.org/syntax/mindmap.html
 </p>
 -->
 
-# SOLID
-### SOLID Principles Examples Repository
+# SOLID Principles Examples Repository
 
 Welcome to the SOLID Principles Examples repository! This collection of code samples and demonstrations is designed to help developers understand and apply the SOLID principles in their software design. Dive into these practical examples to enhance your knowledge of Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion principles. Explore how to write clean, maintainable code that adapts and scales effortlessly.
 
-For more information on the `SOLID` principles, visit the official SOLID principles website at https://solidprinciples.com/.
+## Table of Contents
 
-Hello world
+- [Single Responsibility Principle](#single-responsibility-principle)
+- [Requirements](#requirements)
+- [Getting Started](#getting-started)
+- [Getting Help](#getting-help)
+- [Documentation](#documentation)
+- [License](#license)
+- [Export Control](#export-control)
 
-### 1 - Single Responsibility Principle (SRP)
-This principle states that a class should have only one reason to change, meaning it should have only one responsibility or job. It helps to keep your classes focused and easier to understand.
+## Single Responsibility Principle
+The Single Responsibility Principle (SRP), one of the five SOLID principles, stipulates that a class, entity, component, or function should have a single, well-defined responsibility. When programming following SRP, it becomes possible to create independent and isolated entities, facilitating code reusability, refactoring, and automated testing, resulting in fewer defects. Even in situations where errors occur, isolating and correcting the problem becomes more straightforward.
 
+The approach of single responsibility components contributes to more efficient code maintenance since code units are smaller and, therefore, more easily analyzed within defined scopes. To determine the boundaries of a component's responsibility, it is recommended to name it according to its specific functionalities. The presence of terms like "and... something" or excessively long names may indicate the need to revisit and redefine the tasks assigned to that entity. This principle promotes a clear and cohesive code organization, facilitating the development and maintenance of software systems.
 
-### Exemplo de Código em C#
-Correct usage of the Single Responsibility Principle (SRP) 
-```csharp
-using System;
-
-// Class following the SRP (Single Responsibility Principle)
-class Order
-{
-    public string OrderId { get; set; }
-    public decimal TotalAmount { get; set; }
-    public DateTime OrderDate { get; set; }
-
-    public void SaveOrderToDatabase()
-    {
-        // Logic for saving the order to the database
-        Console.WriteLine("Order saved to the database.");
-    }
-}
-
-// Separate class to handle email notifications
-class EmailService
-{
-    public void SendOrderConfirmationEmail(Order order)
-    {
-        // Logic for sending the order confirmation email
-        Console.WriteLine("Order confirmation email sent for order " + order.OrderId);
-    }
-}
-
-class Program
-{
-    static void Main()
-    {
-        Order order = new Order
-        {
-            OrderId = "12345",
-            TotalAmount = 100.0m,
-            OrderDate = DateTime.Now
-        };
-
-        order.SaveOrderToDatabase();
-
-        EmailService emailService = new EmailService();
-        emailService.SendOrderConfirmationEmail(order);
-    }
-}
-
-```
+> [!NOTE]
+> - **Identification of Responsibilities**: Ensure that you have clearly defined the responsibilities of each class, component, or function. Each should have a single, well-defined responsibility.
+> - **Proper Division**: Avoid overloading a single class or function with too many responsibilities. If you notice a class growing too large, consider dividing its responsibilities into smaller classes.
+> - **Meaningful Naming**: Provide meaningful names for your classes, methods, and functions. Names should clearly reflect the entity's responsibility.
+> - **Unit Testing**: When writing tests for your classes and functions, focus on validating their specific responsibilities. This helps ensure compliance with the SRP.
+> - **Ongoing Review**: Regularly review your code to ensure that classes still have a single responsibility. As software evolves, new responsibilities may inadvertently be introduced.
+> - **Refactoring**: Don't be afraid to refactor your code if you identify SRP violations. Refactoring is an important practice to maintain code quality.
+> - **Understanding Business Logic**: Gain a good understanding of the domain's business rules you're programming for. This helps in properly defining responsibilities.
+> - **Design Patterns**: Be aware of software design patterns such as the Strategy pattern that can assist in adhering to the SRP.
+> - **Documentation**: Document the purpose and responsibility of each class or function. This can be helpful for other developers interacting with the code.
+> - **Dependency Evaluation**: Ensure that the dependencies of a class are relevant to its responsibility. Avoid having a class depend on others that don't make sense within its sphere of responsibility.
 
 
-### 2 - Open/Closed Principle (OCP)
-The OCP encourages software entities (classes, modules, functions) to be open for extension but closed for modification. This means that you should be able to add new functionality without altering existing code. It promotes code reusability and minimizes the risk of introducing new bugs.
-
-### 3 - Liskov Substitution Principle (LSP)
-Named after Barbara Liskov, this principle states that objects of a derived class should be able to replace objects of the base class without affecting the correctness of the program. In other words, derived classes should extend, not break, the behavior of base classes.
-
-### 4 - Interface Segregation Principle (ISP)
-The ISP suggests that clients (users of an interface) should not be forced to depend on interfaces they do not use. It's better to have multiple small, specific interfaces rather than a large, monolithic one. This reduces the impact of changes and dependencies.
-
-### 5 - Dependency Inversion Principle (DIP)
-The DIP emphasizes high-level modules should not depend on low-level modules but should depend on abstractions. It also states that abstractions should not depend on details, and details should depend on abstractions. This encourages decoupling and promotes a more flexible, maintainable system.
+Remember, following the SRP doesn't necessarily mean creating a large number of tiny classes. Instead, it's about finding a balance where each class has a clear and justifiable responsibility within the context of the system. This results in more cohesive, understandable, and maintainable code.
 
 
+## Requirements
+
+## Open/Closed Principle (OCP)
+
+## Liskov Substitution Principle (LSP)
+
+## Interface Segregation Principle (ISP)
+
+## Dependency Inversion Principle (DIP)
+
+
+<
 - [x] #739
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete :tada:
@@ -101,80 +72,11 @@ The DIP emphasizes high-level modules should not depend on low-level modules but
 > Critical content demanding immediate user attention due to potential risks.
 
 
-Here is a simple flow chart:
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-```mermaid
-classDiagram
-Class01 <|-- AveryLongClass : Cool
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 --> C2 : Where am i?
-Class09 --* C3
-Class09 --|> Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-Class08 <--> C2: Cool label
-```
 
 
- ![Descrição da imagem](images/cloud.png)
-
- ```mermaid
-graph TD;
-    A[Iniciar] --> B[Processo 1];
-    B --> C[Processo 2];
-    C --> D[Processo 3];
-    D --> E[Fim];
-```
-
-```mermaid
-mindmap
-    Root
-        A
-        ::icon(fa fa-book)
-        B(B)
-        ::icon(mdi mdi-skull-outline)
-```
-
- ```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-      ::icon(mdi mdi-skull-outline)
-```
 
 
-```marmaid
-graph TD
-  JSON[JSON] -->|fruit: "Apple"| Fruit[Fruit]
-  JSON -->|size: "Large"| Size[Size]
-  JSON -->|color: ["Red", "Green"]| Color[Color]
-```
+
 
 
 
