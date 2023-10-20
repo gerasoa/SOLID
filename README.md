@@ -18,7 +18,7 @@ Welcome to the SOLID Principles Examples repository! This collection of code sam
 ## Table of Contents
 
 - [Single Responsibility Principle (SRP)](#single-responsibility-principle-srp)
-- [Open/Closed Principle (OCP)](#openclosed-principle-ocp-ocp)
+- [Open/Closed Principle (OCP)](#openclosed-principle-ocp)
 - [Liskov Substitution Principle (LSP)](#liskov-substitution-principle-lsp)
 - [Interface Segregation Principle(ISP)](#interface-segregation-principle-isp)
 - [Dependency Inversion Principle(DIP)](#Dependency-inversion-principle-dip)
