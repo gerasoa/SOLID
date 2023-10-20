@@ -18,12 +18,10 @@ Welcome to the SOLID Principles Examples repository! This collection of code sam
 ## Table of Contents
 
 - [Single Responsibility Principle](#single-responsibility-principle)
-- [Open/Closed Principle (OCP)](#open/Closed-Principle-(ocp))
-- [Getting Started](#getting-started)
-- [Getting Help](#getting-help)
-- [Documentation](#documentation)
-- [License](#license)
-- [Export Control](#export-control)
+- [Open/Closed Principle](#openclosed-principle)
+- [Liskov Substitution Principle](#liskov-substitution-principle)
+- [Interface Segregation Principle](#interface-segregation-principle)
+- [Dependency Inversion Principle](#Dependency-inversion-principle)
 
 ## Single Responsibility Principle
 The Single Responsibility Principle (SRP), one of the five SOLID principles, stipulates that a class, entity, component, or function should have a single, well-defined responsibility. When programming following SRP, it becomes possible to create independent and isolated entities, facilitating code reusability, refactoring, and automated testing, resulting in fewer defects. Even in situations where errors occur, isolating and correcting the problem becomes more straightforward.
@@ -46,13 +44,13 @@ The approach of single responsibility components contributes to more efficient c
 Remember, following the SRP doesn't necessarily mean creating a large number of tiny classes. Instead, it's about finding a balance where each class has a clear and justifiable responsibility within the context of the system. This results in more cohesive, understandable, and maintainable code.
 
 
-## Open/Closed Principle (OCP)
+## Open/Closed Principle
 
-## Liskov Substitution Principle (LSP)
+## Liskov Substitution Principle
 
-## Interface Segregation Principle (ISP)
+## Interface Segregation Principle
 
-## Dependency Inversion Principle (DIP)
+## Dependency Inversion Principle
 
 
 <
