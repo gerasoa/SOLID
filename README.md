@@ -60,22 +60,41 @@ The key advantages of OCP include:
 To apply the Open/Closed Principle, various techniques can be used, such as inheritance, interfaces, dependency injection, and design patterns like the Strategy Pattern. These techniques make it possible to add new behaviors to the system without altering the existing code, resulting in a more flexible and adaptable software system.
 
 >[!note]
->1. **Use Abstraction:** Define abstractions, such as interfaces or abstract classes, to encapsulate the core behavior you want to extend. This abstraction should remain stable while allowing new implementations to be added.
->2. **Employ Polymorphism:** Utilize [polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)#:~:text=The%20concept%20is%20borrowed%20from,set%20of%20individually%20specified%20types.) to enable different implementations of the same abstraction to coexist. This allows you to extend the software's functionality by adding new classes that adhere to the established abstraction.
->3. **Create Extension Points:** Design your software with clearly defined extension points or hooks that enable new functionality to be added without modifying existing code. These hooks should be part of the abstraction.
->4. **Favor Composition:** Consider using composition over inheritance when it makes sense. Instead of inheriting from existing classes, encapsulate them as components in new classes. This promotes more flexible and interchangeable components.
->5. **Design Patterns:** Familiarize yourself with design patterns that promote the OCP, such as the Strategy Pattern or the Decorator Pattern. These patterns provide structured ways to extend functionality.
->6. **Dependency Injection:** Implement dependency injection to inject dependencies into your classes. This enables you to change or extend the behavior of a class by simply injecting different dependencies without modifying the class itself.
->7. **Automated Testing:** Ensure that you have a robust suite of automated tests in place. This is particularly important when you're extending or introducing new implementations. Tests help catch regressions and ensure that your extensions don't break existing functionality.
->8. **Documentation:** Clearly document the extension points and the conventions for creating new extensions. This documentation will guide other developers in extending your software correctly.
->9. **Code Reviews:** Enforce code reviews to assess how effectively OCP is being applied. Code reviews provide opportunities to ensure that extensions follow the principles and don't accidentally introduce violations.
->10. **Continuous Integration:** Integrate OCP adherence into your continuous integration process. Set up checks and automated tools that verify OCP compliance in the codebase.
->11. **Educate the Team:** Ensure that your development team understands the principles and benefits of OCP. This knowledge will lead to better-designed and more maintainable software.
->12. **Refactor When Necessary:** Regularly review the codebase and identify opportunities to refactor or introduce new abstractions to better adhere to the OCP. Over time, software requirements may change, and adjustments will be needed.
+> - **Use Abstraction:** Define abstractions, such as interfaces or abstract classes, to encapsulate the core behavior you want to extend. This abstraction should remain stable while allowing new implementations to be added.
+> - **Employ Polymorphism:** Utilize [polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)#:~:text=The%20concept%20is%20borrowed%20from,set%20of%20individually%20specified%20types.) to enable different implementations of the same abstraction to coexist. This allows you to extend the software's functionality by adding new classes that adhere to the established abstraction.
+> - **Create Extension Points:** Design your software with clearly defined extension points or hooks that enable new functionality to be added without modifying existing code. These hooks should be part of the abstraction.
+> - **Favor Composition:** Consider using composition over inheritance when it makes sense. Instead of inheriting from existing classes, encapsulate them as components in new classes. This promotes more flexible and interchangeable components.
+> - **Design Patterns:** Familiarize yourself with design patterns that promote the OCP, such as the Strategy Pattern or the Decorator Pattern. These patterns provide structured ways to extend functionality.
+> - **Dependency Injection:** Implement dependency injection to inject dependencies into your classes. This enables you to change or extend the behavior of a class by simply injecting different dependencies without modifying the class itself.
+> - **Automated Testing:** Ensure that you have a robust suite of automated tests in place. This is particularly important when you're extending or introducing new implementations. Tests help catch regressions and ensure that your extensions don't break existing functionality.
+> - **Documentation:** Clearly document the extension points and the conventions for creating new extensions. This documentation will guide other developers in extending your software correctly.
+> - **Code Reviews:** Enforce code reviews to assess how effectively OCP is being applied. Code reviews provide opportunities to ensure that extensions follow the principles and don't accidentally introduce violations.
+> - **Continuous Integration:** Integrate OCP adherence into your continuous integration process. Set up checks and automated tools that verify OCP compliance in the codebase.
+> - **Educate the Team:** Ensure that your development team understands the principles and benefits of OCP. This knowledge will lead to better-designed and more maintainable software.
+> - **Refactor When Necessary:** Regularly review the codebase and identify opportunities to refactor or introduce new abstractions to better adhere to the OCP. Over time, software requirements may change, and adjustments will be needed.
 
 By following these recommendations, you can apply the Open/Closed Principle effectively and build more extensible, maintainable, and adaptable software systems.
 
 ## Liskov Substitution Principle (LSP)
+The Liskov Substitution Principle (Liskov Substitution Principle - LSP) is one of the five principles of SOLID, a set of software design guidelines aimed at ensuring consistent and reliable code extensibility. LSP states that if a class is derived from another through inheritance, the object or instance resulting from the subclass should be able to replace the object from the parent class without causing program breakage. In simpler terms, a subclass should not introduce unexpected behaviors or exceptions that are incompatible with the parent class.
+
+Effectively applying LSP encourages the precise definition of abstractions at different levels of the class hierarchy, promoting consistency and coherence among them. This leads us to carefully consider what a parent class should provide to its subclasses, as this is essential for adhering to the Open/Closed Principle (Open/Closed Principle - OCP).
+
+The Liskov Principle suggests that we should not allow subclasses to exhibit unexpected behaviors, such as an essential method that exists at one point in the inheritance hierarchy but raises exceptions at a lower point. Instead, subclasses should be designed appropriately and in a manner that is compatible with the parent class, ensuring that object replacement occurs consistently and without unexpected side effects. LSP is essential for creating robust and predictable class hierarchies in software systems.
+
+>[!note]
+> - **Understand the Class Hierarchy**: Before creating complex class hierarchies, thoroughly understand the inheritance structure and how subclasses relate to the parent class.
+> - **Avoid Unexpected Exceptions**: Do not introduce exceptions or unexpected behaviors in subclasses that break the expectations established by the parent class.
+> - **Follow Well-Defined Contracts**: Define clear contracts and interfaces for your base classes. Subclasses should strictly adhere to these contracts.
+> - **Test Substitution**: Ensure that all subclasses are tested for their ability to replace objects from the parent class without causing issues.
+> - **Do Not Violate Constraints**: Subclasses should not violate or relax constraints imposed by the parent class. Substitution should maintain the same semantics.
+> - **Be Type-Aware**: When creating subclasses, carefully consider types and ensure that substitution does not affect type semantics.
+> - **Avoid Multiple Inheritance**: Avoid multiple inheritance, as it can complicate the application of the LSP.
+> - **Utilize Interfaces**: Using interfaces may be more appropriate in certain cases than inheritance. Evaluate whether an interface would be a more suitable choice for defining contracts.
+> - **Document and Communicate**: Explicitly document expected contracts and inheritance constraints, and communicate these requirements to the entire team.
+> - **Review and Validate**: Conduct code reviews and validations to ensure that the LSP is respected throughout the project.
+
+The rigorous application of LSP can lead to more robust class hierarchies and software systems that are more predictable and scalable.
 
 ## Interface Segregation Principle (ISP)
 
