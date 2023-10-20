@@ -18,7 +18,7 @@ Welcome to the SOLID Principles Examples repository! This collection of code sam
 ## Table of Contents
 
 - [Single Responsibility Principle](#single-responsibility-principle)
-- [Requirements](#requirements)
+- [Open/Closed Principle (OCP)](#open/Closed-Principle-(ocp))
 - [Getting Started](#getting-started)
 - [Getting Help](#getting-help)
 - [Documentation](#documentation)
@@ -45,8 +45,6 @@ The approach of single responsibility components contributes to more efficient c
 
 Remember, following the SRP doesn't necessarily mean creating a large number of tiny classes. Instead, it's about finding a balance where each class has a clear and justifiable responsibility within the context of the system. This results in more cohesive, understandable, and maintainable code.
 
-
-## Requirements
 
 ## Open/Closed Principle (OCP)
 
