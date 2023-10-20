@@ -22,12 +22,12 @@ Welcome to the SOLID Principles Examples repository! This collection of code sam
 - [Liskov Substitution Principle (LSP)](#liskov-substitution-principle-lsp)
 - [Interface Segregation Principle(ISP)](#interface-segregation-principle-isp)
 - [Dependency Inversion Principle(DIP)](#dependency-inversion-principle-dip)
-- [Benefits and Advantages](#benefits-and-advantages)
-- [Challenges and Pitfalls](#challenges-and-pitfalls)
-- [Relation to Other Principles](#relation-to-other-principles)
-- [Tools and Frameworks](#tools-and-frameworks)
-- [Relation to Other Principles](#relation-to-other-principles)
-- [Interrelationships Between SOLID Principles](#interrelationships-between-solid-principles)
+- [[Planned Topic] - Benefits and Advantages](#benefits-and-advantages)
+- [[Planned Topic] - Challenges and Pitfalls](#challenges-and-pitfalls)
+- [[Planned Topic] - Relation to Other Principles](#relation-to-other-principles)
+- [[Planned Topic] - Tools and Frameworks](#tools-and-frameworks)
+- [[Planned Topic] - Relation to Other Principles](#relation-to-other-principles)
+- [[Planned Topic] - Interrelationships Between SOLID Principles](#interrelationships-between-solid-principles)
 
 ## Single Responsibility Principle (SRP)
 The Single Responsibility Principle (SRP), one of the five SOLID principles, stipulates that a class, entity, component, or function should have a single, well-defined responsibility. When programming following SRP, it becomes possible to create independent and isolated entities, facilitating code reusability, refactoring, and automated testing, resulting in fewer defects. Even in situations where errors occur, isolating and correcting the problem becomes more straightforward.
