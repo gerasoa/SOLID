@@ -17,13 +17,13 @@ Welcome to the SOLID Principles Examples repository! This collection of code sam
 
 ## Table of Contents
 
-- [Single Responsibility Principle](#single-responsibility-principle)
+- [Single Responsibility Principle (SRP)](#single-responsibility-principle-srp)
 - [Open/Closed Principle](#openclosed-principle)
 - [Liskov Substitution Principle](#liskov-substitution-principle)
 - [Interface Segregation Principle](#interface-segregation-principle)
 - [Dependency Inversion Principle](#Dependency-inversion-principle)
 
-## Single Responsibility Principle
+## Single Responsibility Principle (SRP)
 The Single Responsibility Principle (SRP), one of the five SOLID principles, stipulates that a class, entity, component, or function should have a single, well-defined responsibility. When programming following SRP, it becomes possible to create independent and isolated entities, facilitating code reusability, refactoring, and automated testing, resulting in fewer defects. Even in situations where errors occur, isolating and correcting the problem becomes more straightforward.
 
 The approach of single responsibility components contributes to more efficient code maintenance since code units are smaller and, therefore, more easily analyzed within defined scopes. To determine the boundaries of a component's responsibility, it is recommended to name it according to its specific functionalities. The presence of terms like "and... something" or excessively long names may indicate the need to revisit and redefine the tasks assigned to that entity. This principle promotes a clear and cohesive code organization, facilitating the development and maintenance of software systems.
