@@ -2,6 +2,7 @@
 https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax 
 https://www.techtarget.com/searchapparchitecture/feature/An-intro-to-the-5-SOLID-principles-of-object-oriented-design
 https://blog.knoldus.com/why-we-need-solid-principles-and-its-types/
+https://mermaid.js.org/syntax/mindmap.html
 -->
 
   ![Descrição da imagem](images/solid_principles_of_object_oriented_design-f.png)
@@ -123,3 +124,55 @@ Class01 : int chimp
 Class01 : int gorilla
 Class08 <--> C2: Cool label
 ```
+
+
+ ![Descrição da imagem](images/cloud.png)
+
+ ```mermaid
+graph TD;
+    A[Iniciar] --> B[Processo 1];
+    B --> C[Processo 2];
+    C --> D[Processo 3];
+    D --> E[Fim];
+```
+
+```mermaid
+mindmap
+    Root
+        A
+        ::icon(fa fa-book)
+        B(B)
+        ::icon(mdi mdi-skull-outline)
+```
+
+ ```mermaid
+mindmap
+  root((mindmap))
+    Origins
+      Long history
+      ::icon(fa fa-book)
+      Popularisation
+        British popular psychology author Tony Buzan
+    Research
+      On effectiveness<br/>and features
+      On Automatic creation
+        Uses
+            Creative techniques
+            Strategic planning
+            Argument mapping
+    Tools
+      Pen and paper
+      Mermaid
+      ::icon(mdi mdi-skull-outline)
+```
+
+
+```marmaid
+graph TD
+  JSON[JSON] -->|fruit: "Apple"| Fruit[Fruit]
+  JSON -->|size: "Large"| Size[Size]
+  JSON -->|color: ["Red", "Green"]| Color[Color]
+```
+
+
+
