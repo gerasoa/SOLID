@@ -3,11 +3,13 @@ https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-wr
 https://www.techtarget.com/searchapparchitecture/feature/An-intro-to-the-5-SOLID-principles-of-object-oriented-design
 https://blog.knoldus.com/why-we-need-solid-principles-and-its-types/
 https://mermaid.js.org/syntax/mindmap.html
+
+
+
+<p align="center">
+  <img src="images/solid_transparent.png" alt"SOLID Principles">
+</p>
 -->
-
-  ![Descrição da imagem](images/solid_principles_of_object_oriented_design-f.png)
-
-
 
 # SOLID
 ### SOLID Principles Examples Repository
