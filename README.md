@@ -65,7 +65,7 @@ The Open/Closed Principle (OCP) is one of the five principles of SOLID, a set of
 
 In simpler terms, this means that you should be able to extend the behavior of a software component without having to change its original source code. Instead, you should be able to create new classes or modules that inherit from or connect to the existing component to add functionality. This is similar to the way Object-Relational Mapping (ORM) tools allow you to connect to different databases in an application without altering the source code or how browser plugins can be installed without modifying the browser's source code.
   
-<br>
+<br><br>
 
 The key advantages of OCP include:
 
