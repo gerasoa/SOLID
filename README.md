@@ -105,7 +105,7 @@ The Liskov Principle suggests that we should not allow subclasses to exhibit une
 > - ***Avoid Unexpected Exceptions***: Do not introduce exceptions or unexpected behaviors in subclasses that break the expectations established by the parent class.
 > - ***Follow Well-Defined Contracts***: Define clear contracts and interfaces for your base classes. Subclasses should strictly adhere to these contracts.
 > - ***Test Substitution***: Ensure that all subclasses are tested for their ability to replace objects from the parent class without causing issues.
-> - **Do Not Violate Constraints**: Subclasses should not violate or relax constraints imposed by the parent class. Substitution should maintain the same semantics.
+> - ***Do Not Violate Constraints***: Subclasses should not violate or relax constraints imposed by the parent class. Substitution should maintain the same semantics.
 > - ***Be Type-Aware***: When creating subclasses, carefully consider types and ensure that substitution does not affect type semantics.
 > - ***Avoid Multiple Inheritance***: Avoid multiple inheritance, as it can complicate the application of the LSP.
 > - ***Utilize Interfaces***: Using interfaces may be more appropriate in certain cases than inheritance. Evaluate whether an interface would be a more suitable choice for defining contracts.
