@@ -34,7 +34,6 @@ Welcome to the SOLID Principles Examples repository! This collection of code sam
 
 ## Single Responsibility Principle (SRP)
 <img align="right" width="300" src="images/srp.drawio.svg">
-
 The Single Responsibility Principle (SRP), one of the five SOLID principles, stipulates that a class, entity, component, or function should have a single, well-defined responsibility. When programming following SRP, it becomes possible to create independent and isolated entities, facilitating code reusability, refactoring, and automated testing, resulting in fewer defects. Even in situations where errors occur, isolating and correcting the problem becomes more straightforward.
 
 
@@ -62,6 +61,7 @@ Remember, following the SRP doesn't necessarily mean creating a large number of 
 
 
 ## Open/Closed Principle (OCP)
+<img align="left" width="300" src="images/ocp.drawio.svg">
 The Open/Closed Principle (OCP) is one of the five principles of SOLID, a set of software design guidelines aimed at creating more efficient, scalable, and maintainable systems. OCP states that software entities (such as classes, modules, and functions) should be open for extension but closed for modification.
 
 In simpler terms, this means that you should be able to extend the behavior of a software component without having to change its original source code. Instead, you should be able to create new classes or modules that inherit from or connect to the existing component to add functionality. This is similar to the way Object-Relational Mapping (ORM) tools allow you to connect to different databases in an application without altering the source code or how browser plugins can be installed without modifying the browser's source code.
