@@ -10,6 +10,8 @@ https://mermaid.js.org/syntax/mindmap.html
   <img src="images/solid_transparent.png" alt"SOLID Principles">
 </p>
 -->
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 # SOLID Principles Examples Repository
 
